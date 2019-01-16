@@ -409,6 +409,9 @@ footer img {
     nav ul.open {
         height:130px;
     }
+    main {
+        min-height: 0;
+    }
     .photos ul li {
         float: none;
         width: 80%;
