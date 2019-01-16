@@ -377,7 +377,7 @@ footer img {
 @media screen and (max-width: 480px) {
     html {
         background: url(images/background_mobile.png) no-repeat top center fixed; 
-        background-size: auto;
+        background-size: 100%;
     }
     nav ul li {
         float: none;
