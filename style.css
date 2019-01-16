@@ -380,10 +380,11 @@ footer img {
         background-size: 100%;
     }
     #logo {
-        font-size: 60px;
+        background-size: 100%;
+        font-size: 40px;
     }
     header h3 {
-        margin: 0 0 5px;
+        margin: 0 0 8px;
     }
     nav ul li {
         float: none;
