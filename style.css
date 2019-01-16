@@ -376,6 +376,7 @@ footer img {
 
 @media screen and (max-width: 480px) {
     html {
+        background: url(images/background.png) repeat top center fixed; 
         background-size: auto;
     }
     nav ul li {
