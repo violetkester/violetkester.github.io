@@ -375,6 +375,9 @@ footer img {
 }
 
 @media screen and (max-width: 480px) {
+    html {
+        background-size: contain;
+    }
     nav ul li {
         float: none;
         width: 90%;
