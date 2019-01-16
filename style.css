@@ -379,10 +379,16 @@ footer img {
         background: url(images/background_mobile.png) no-repeat top center fixed; 
         background-size: 100%;
     }
+    #logo {
+        font-size: 60px;
+    }
+    header h3 {
+        margin: 0 0 5px;
+    }
     nav ul li {
         float: none;
         width: 90%;
-        margin: 10px auto;
+        margin: 5px auto 10px;
     }
     #burger {
         width: 100%;
@@ -390,7 +396,7 @@ footer img {
         background: url(images/burger.png) no-repeat center center;
     }
     nav ul {
-        margin: 5px auto 15px;
+        margin: 5px auto 5px;
         overflow: hidden;
         transition: height .6s ease-in;
         -webkit-transition: height .6s ease-in;
