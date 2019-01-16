@@ -330,8 +330,8 @@ input[type="submit"]:active {
 footer {
     width: 96%;
     max-width: 960px;
-    margin: 10 auto;
-    padding: 10px;
+    margin: 10 auto 0;
+    padding: 10px 10px 0;
     border-top: 1px solid white;
 }
 .footer {
