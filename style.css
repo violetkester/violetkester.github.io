@@ -130,11 +130,17 @@ main {
     background: rgba(255, 255, 255, 0.6);
 }
 h2 {
+    font-family: helvetica;
+    color: #32ffd5;
     font-style: italic;
-    text-decoration: underline;
-    letter-spacing: .2em;
-    font-size: 18px;
-    margin: 5px;
+    letter-spacing: .5em;
+    text-shadow: 1px 1px 1px lightgray;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 5px auto;
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    padding: 5px 0;
 }
 main p {
     font-family: verdana, sans-serif;
@@ -224,28 +230,37 @@ main a {
 
 /* WORKS */
 
-#lsccvideo, #flowersbanner {
+#tluvideo, #lcssvideo, #flowersbanner {
     background-color: black;
     width: 100%;
-    height: 300px;
     text-align: center;
     margin-bottom: 15px;
     margin-top: 6px;
+}
+#lsccvideo, #flowersbanner {
+    height: 300px;
 }
 .tlu {
     text-align: left;
     display: inline;
     width: 25%;
 }
+.tlu h2 {
+    width: 100%;
+    margin: 0 auto;
+}
 .tlu p {
     margin-right: 15px;
 }
 .tluflyer {
     float: left;
+    position: relative;
     display: inline-block;
     width: 40%;
+    margin-top: 10px;
     margin-right: 15px;
     margin-bottom: 10px;
+    z-index: 1;
 }
 .tluflyer img {
     width: 100%;
@@ -269,13 +284,6 @@ main a {
   content: "";
   display: block;
   clear: both;
-}
-#tlupromo {
-    background-color: black;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 5px;
 }
 
 /* CONTACT */
@@ -393,8 +401,9 @@ footer img {
     }
     #burger {
         width: 100%;
-        height: 35px;
+        height: 25px;
         background: url(images/burger.png) no-repeat center center;
+        background-size: 25px;
     }
     nav ul {
         margin: 5px auto 5px;
@@ -415,7 +424,12 @@ footer img {
     .photos ul li {
         float: none;
         width: 80%;
-        padding: 15px;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #919191;
+    }
+    .photos ul li:last-child {
+        border-bottom: none;
     }
     .caption {
         text-align: center;
