@@ -158,7 +158,7 @@ main a {
     margin-bottom: 5px;
 }
 .statement {
-    padding: 2px 5px 5px 5px;
+    padding: 0px 5px 5px 5px;
 }
 
 /* PHOTOS */
@@ -405,7 +405,7 @@ header h3 {
     }
     header h3 {
         margin: 0 0 8px;
-        font-size: 11px;
+        font-size: 12px;
         letter-spacing: .6em;
     }
     nav ul li {
