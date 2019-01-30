@@ -4,19 +4,35 @@
     <title>kim * loves * you</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("user_EKmj1pSXPKNoT7cQEKs9s");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('kim_huong_ruiz', 'contact_template', this);
+                alert("Your message has been submitted. Thank you.");
+                document.getElementById('contact-form').reset();
+            });
+        }
+    </script>
   </head>
     
   <body>
       <header>
         <h1 id="logo">Kim-Hương Ruiz</h1>
-          <h3>optional text here</h3>
+          <h3>photographer, videographer, multi-media artist, and musician</h3>
       <nav>
         <div id="burger"></div>
         <ul>
-            <li><a href="statement.html">statement</a></li>
-            <li><a href="photos.html">photo</a></li>
+            <li><a href="photos.html">photos</a></li>
             <li><a href="works.html">works</a></li>
-            <li><a href="about.html">about / cv</a></li>
+            <li><a href="Kim-Ruiz-CV.pdf">cv</a></li>
+            <li><a href="statement.html">about</a></li>
             <li><a href="contact.html">contact</a></li>
           </ul>
         </nav>
@@ -24,28 +40,21 @@
 
     <div id="content">
         <main>
-            <div class="contact">
-                <form action="action_page.php">
-
-                <label for="name">Your name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
-                    
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject..">
-
-                <label for="subject">Message:</label>
-                <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label>Your name:</label>
+                <input type="text" name="user_name" placeholder="Your name..">
+                <label>E-mail address:</label>
+                <input type="email" name="user_email" placeholder="Your e-mail address..">
+                <label>Message:</label>
+                <textarea name="user_message" placeholder="Write something.." style="height:200px"></textarea>
                 <input type="submit" value="Submit">
-
-                </form>
-            </div>
+            </form>
         </main>
     </div>
       
         <footer>
-            <span class="footer">"this is footer text"</span>
-            <span class="copyright"><br>&copy; 2019 Kim-Hương Ruiz. All rights reserved.</span>
+            <span class="copyright"><br>&copy; 2019 Kim-Hương Ruiz</span>
             <img src="images/petals.png">
         </footer>
       
