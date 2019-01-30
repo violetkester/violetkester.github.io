@@ -397,7 +397,7 @@ header h3 {
 @media screen and (max-width: 480px) {
     html {
         background: url(images/background_mobile.png) repeat top center fixed; 
-        background-size: 100%;
+        background-size: 120%;
     }
     #logo {
         background-size: 100%;
