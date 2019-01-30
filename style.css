@@ -75,9 +75,9 @@ header h1 {
 }
 h3 {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: .5em;
-    font-family: helvetica, verdana, sans-serif;
+    font-family: verdana, sans-serif;
     font-weight: 100;
     font-style: italic;
     text-shadow: 1px 1px 1px #32ffd5, 1px 2px 3px #919191;
@@ -129,7 +129,6 @@ main {
     max-width: 960px;
     margin: 0 auto;
     padding: 5px;
-    min-height: 400px;
     background: rgba(255, 255, 255, 0.6);
 }
 h2 {
@@ -158,8 +157,8 @@ main a {
     letter-spacing: .2em;
     margin-bottom: 5px;
 }
-.statement, .about {
-    padding: 2%;
+.statement {
+    padding: 2px 5px 5px 5px;
 }
 
 /* PHOTOS */
@@ -335,6 +334,7 @@ input[type="submit"] {
 }
 input[type="submit"]:active {
     background: white;
+    transform: translate(1px, 1px);
 }
 
 /* FOOTER */
@@ -387,7 +387,7 @@ footer img {
     }
 header h3 {
         margin: 0 0 8px;
-        font-size: 14px;
+        font-size: 13px;
 }
 .tlugallery {
     transform: translateX(0);
@@ -405,7 +405,7 @@ header h3 {
     }
     header h3 {
         margin: 0 0 8px;
-        font-size: 12px;
+        font-size: 11px;
         letter-spacing: .6em;
     }
     nav ul li {
