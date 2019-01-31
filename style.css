@@ -51,7 +51,8 @@ body {
     animation-fill-mode: forwards;
 }
 .intro a {
-    font-size: 14px;
+    color: blue;
+    font-size: 12px;
     font-style: italic;
     letter-spacing: .5em;
     opacity: 0;
