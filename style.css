@@ -289,6 +289,12 @@ main a {
 
 /* CONTACT */
 
+#kimpic {
+    width: 100%;
+}
+#kimpic img {
+    width: 100%;
+}
 #contact-form {
     padding: 5px;
     text-align: left;
@@ -320,7 +326,7 @@ textarea {
 }
 input[type="submit"] {
     width: 80px;
-    margin-top: 18px;
+    margin: 18px auto;
     padding: 7px;
     border: none;
     border-radius: 12px;
