@@ -157,7 +157,7 @@ main a {
     letter-spacing: .2em;
     margin-bottom: 5px;
 }
-main a img:focus {
+main a:focus {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
     -webkit-tap-highlight-color: transparent;
 }
