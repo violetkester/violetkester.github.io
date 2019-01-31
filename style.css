@@ -306,7 +306,7 @@ label {
     letter-spacing: .2em;
 }
 input[type=text], input[type=email], textarea {
-    width: 100%;
+    width: 98%;
     border: none;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.8);
@@ -315,7 +315,7 @@ input[type=text], input[type=email], textarea {
     font-size: 12px;
     letter-spacing: .3em;
     font-style: italic;
-    padding: 10px;
+    padding: 1%;
 }
 ::placeholder {
     color: red;
