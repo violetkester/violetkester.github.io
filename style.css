@@ -1,8 +1,9 @@
 * {
-    font-family: times, serif;
-    font-size: 12 px;
-    letter-spacing: .07em;
+    font-family: verdana, sans-serif;
+    font-size: 12px;
+    letter-spacing: .2em;
     color: #919191;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html {
   background: url(images/background.png) no-repeat center center fixed; 
@@ -144,11 +145,6 @@ h2 {
     width: 100%;
     padding: 5px 0;
 }
-main p {
-    font-family: verdana, sans-serif;
-    font-size: 12px;
-    letter-spacing: .2em;
-}
 main a {
     color:blue;
     font-style: italic;
@@ -156,10 +152,6 @@ main a {
     font-family: verdana, sans-serif;
     letter-spacing: .2em;
     margin-bottom: 5px;
-}
-main a:focus {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
-    -webkit-tap-highlight-color: transparent;
 }
 .statement {
     padding: 0px 5px 5px 5px;
@@ -361,9 +353,6 @@ footer {
 }*/
 .copyright {
     display: block;
-    font-family: verdana, sans-serif;
-    font-size: 12px;
-    letter-spacing: .2em;
     padding-bottom: 5px;
     line-height: 8px;
 }
