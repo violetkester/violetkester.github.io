@@ -163,71 +163,72 @@ main a {
 
 /* PHOTOS */
 
-.photos {
+.photoslist {
     width: 100%;
 }
-.photos ul {
-    margin: 0 auto;
+.photoslist ul {
+    margin: 10px auto 0;
     padding: 0;
 }
-.photos ul li {
+.photoslist ul li {
     display: inline-block;
-    width: 25%;
+    width: 28%;
     vertical-align: top;
     list-style-type: none;
     margin: 0 auto;
-    padding: 3.5%;
+    padding: 1.5% 2%;
 }
 .caption {
     text-align: right;
     margin-top: 20px;
 }
-.photos ul li img {
+.photoslist ul li img {
     width: 100%;
     opacity: .8;
     transition: .3s ease-in;
 }
-.photos ul li img:hover {
+.photoslist ul li img:hover {
     opacity: 1;
 }
-.gallery, #polaroids {
+.imggallery, #cine {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
 }
-.gallery ul, #polaroids ul {
+#natural, #ep {
+    margin-top: 25px;
+}
+.imggallery p {
+    padding-bottom: 2px; 
+}
+.imggallery ul, #natural ul, #ep ul, #cine ul {
     min-width: 360px;
     padding: 0;
     margin: 0 auto;
 }
-.gallery ul li, , #polaroids ul li {
-    width: 150px;
-    list-style-type: none;
+.imggallery ul li, #natural ul li, #ep ul li {
+    width: 24%;
     display: inline-block;
-    padding: 5px;
-    margin: 5px;
+    list-style-type: none;
+    vertical-align: top;
 }
-.gallery img, polaroids img {
-    width: 150px;
+.imggallery img, #cine img, #natural img, #ep img {
+    width: 100%;
     opacity: .8;
     transition: .3s ease-in;
 }
-.gallery img:hover, #polaroids img:hover {
+.imggallery img:hover, #cine img:hover, #natural img:hover, #ep img:hover {
     opacity: 1;
 }
 #cine li {
-    width: 40%;
-}
-#cine li img {
-    width: 100%;
+    width: 49%;
+    display: inline-block;
 }
 #ep li:last-of-type {
-    width: 90%;
+    width: 100%;
+    padding: 0;
 }
 #ep li:last-of-type img {
-    width: 55%;
-}
-#ep, #cine {
-    margin-top: 25px;
+    width: 70%;
 }
 
 /* WORKS */
@@ -242,16 +243,16 @@ main a {
 #lsccvideo, #flowersbanner {
     height: 300px;
 }
-.tlu {
+.tlutext {
     text-align: left;
     display: inline;
     width: 25%;
 }
-.tlu h2 {
+.tlutext h2 {
     width: 100%;
     margin: 0 auto;
 }
-.tlu p {
+.tlutext p {
     margin-right: 15px;
 }
 .tluflyer {
@@ -274,15 +275,14 @@ main a {
 .lsccgallery img, .tlugallery img, .flowersgallery img {
     margin: 0 auto;
     width: 17%;
-    padding: .5%;
+    padding: 0 .5% .5%;
     opacity: .8;
     transition: .3s ease-in;
-    margin-bottom: 0;
 }
-.lsccgallery img:hover, .tlugaller img:hover, .flowersgallery img:hover {
+.lsccgallery img:hover, .tlugallery img:hover, .flowersgallery img:hover {
     opacity: 1;
 }
-.tlu:after {
+.tlutext:after {
   content: "";
   display: block;
   clear: both;
@@ -341,12 +341,12 @@ input[type="submit"]:active {
 
 footer {
     width: 96%;
-    max-width: 960px;
-    margin: 10 auto 0;
-    padding: 10px 10px 0;
+    max-width: 970px;
+    margin: 10px auto 0;
+    padding: 10px 0 0;
     border-top: 1px solid white;
 }
-/*.footer {
+/*.footertext {
     color: white;
     font-size: 25px;
     text-transform: uppercase;
@@ -356,13 +356,15 @@ footer {
     text-shadow: 1px 1px 1px #919191;
 }*/
 .copyright {
+    display: block;
     font-family: verdana, sans-serif;
     font-size: 12px;
     letter-spacing: .2em;
-    line-height: 5px;
+    padding-bottom: 5px;
+    line-height: 8px;
 }
 footer img {
-    display:block;
+    display: block;
     height: 90px;
     margin: 10px auto;
 }
@@ -380,14 +382,20 @@ footer img {
 
 /*MEDIA QUERIES*/
 
+@media screen and (max-width: 735px) {
+    .caption h2 {
+        font-size: 10px;
+}
+}
+
 @media screen and (max-width: 550px) {
 #logo {
-        background-size: 100%;
-        font-size: 40px;
+    background-size: 100%;
+    font-size: 40px;
     }
 header h3 {
-        margin: 0 0 8px;
-        font-size: 13px;
+    margin: 0 0 8px;
+    font-size: 13px;
 }
 .tlugallery {
     transform: translateX(0);
@@ -435,39 +443,48 @@ header h3 {
     main {
         min-height: 0;
     }
-    .photos ul li {
+    .photoslist ul li {
         float: none;
-        width: 80%;
+        width: 90%;
         padding: 10px;
         margin-bottom: 5px;
         border-bottom: 1px solid #919191;
     }
-    .photos ul li:last-child {
+    .photoslist ul li:last-child {
         border-bottom: none;
     }
     .caption {
         text-align: center;
     }
-    .gallery ul li {
-        width: 98%;
-        padding: 0px;
-        margin: 8px 0;
+    .caption h2 {
+        font-size: 14px;
     }
-    .gallery ul li img {
+    .imggallery ul li {
+        display: inline-block;
+        width: 48%;
+        padding: 0;
+        margin:0;
+    }
+    .imggallery ul li img {
         width: 100%;
     }
-    #polaroids ul li {
-        width: 30%;
-        display: inline;
+    #natural ul li {
+        display: inline-block;
+        width: 31.25%;
+        padding: 2px;
+        margin: 0 auto;
     }
-    #polaroids ul li img {
-        width: 30%;
+    #natural ul li img {
+        width: 100%;
     }
     #ep li:last-of-type img {
         width: 100%;
     }
-    .tlu {
+    .tlutext {
         text-align: center;
+    }
+    .tlutext p {
+    margin-right: 0;
     }
     .tluflyer img {
         float: none;
@@ -475,11 +492,15 @@ header h3 {
     }
     .tlugallery {
         padding: 0;
+        display: inline-block;
     }
-    .tlugallery img, .lsccgallery img {
+    .tlugallery img, .lsccgallery img, .flowersgallery img {
         width: 30%;
     }
     #flowersvideo {
         width: 375px;
+    }
+    .copyright {
+        font-size: 11px;
     }
 }
