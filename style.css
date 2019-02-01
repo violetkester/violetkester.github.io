@@ -319,7 +319,7 @@ label {
 input[type=text], input[type=email], textarea {
     width: 98%;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     background: rgba(255, 255, 255, 0.8);
     color: black;
     font-family: verdana, sans-serif;
@@ -331,7 +331,7 @@ input[type=text], input[type=email], textarea {
 ::placeholder {
     color: red;
     opacity: .5;
-    padding: 0 3px;
+    padding: 3px 5px;
     font-size: 11px;
 }
 textarea {
@@ -515,6 +515,9 @@ header h3 {
     }
     #flowersvideo {
         width: 375px;
+    }
+    ::placeholder {
+        font-size: 10px;
     }
     .copyright {
         font-size: 11px;
