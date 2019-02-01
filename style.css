@@ -84,7 +84,7 @@ h3 {
     font-family: verdana, sans-serif;
     font-weight: normal;
     font-style: italic;
-    text-shadow: 1px 1px 1px #32ffd5, 1px 2px 3px #919191;
+    text-shadow: 1px 1px 2px #32ffd5, 1px 2px 3px #919191;
     margin: 0 auto 20px;
 }
 nav ul {
@@ -136,7 +136,7 @@ main {
     background: rgba(255, 255, 255, 0.6);
 }
 h2 {
-    font-family: helvetica;
+    font-family: helvetica, verdana, sans-serif;
     color: #32ffd5;
     font-style: italic;
     letter-spacing: .5em;
@@ -148,16 +148,27 @@ h2 {
     width: 100%;
     padding: 5px 0;
 }
-main a {
-    color:blue;
+h4 {
+    font-family: helvetica, verdana, sans-serif;
+    color: lightgray;
     font-style: italic;
-    font-size: 12px;
-    font-family: verdana, sans-serif;
-    letter-spacing: .2em;
-    margin-bottom: 5px;
+    letter-spacing: .5em;
+    text-shadow: 1px 1px 2px #32ffd5;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 5px auto;
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    padding: 2px 0;
 }
 .statement {
     padding: 0px 5px 5px 5px;
+}
+.back a {
+    color: blue;
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: .5em;
 }
 
 /* PHOTOS */
@@ -320,6 +331,8 @@ input[type=text], input[type=email], textarea {
 ::placeholder {
     color: red;
     opacity: .5;
+    padding: 0 3px;
+    font-size: 11px;
 }
 textarea {
     resize: none;
@@ -353,6 +366,7 @@ footer {
 }
 /*.footertext {
     color: white;
+    font-family: times, serif;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
@@ -414,7 +428,7 @@ header h3 {
         font-size: 40px;
     }
     header h3 {
-        margin: 0 0 8px;
+        margin: 5px 0 10px;
         font-size: 11px;
         letter-spacing: .6em;
     }
@@ -430,7 +444,7 @@ header h3 {
         background-size: 25px;
     }
     nav ul {
-        margin: 5px auto 5px;
+        margin: 8px auto 5px;
         overflow: hidden;
         transition: height .6s ease-in;
         -webkit-transition: height .6s ease-in;
