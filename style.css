@@ -19,17 +19,23 @@ body {
 }
 /* INTRO PAGE */
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 .intro {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -52%);
 }
-#introvideo {
+.intro iframe {
     opacity: 0;
     animation-name: fadeIn;
-    animation-delay: 0;
-    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-duration: 6s;
     animation-fill-mode: forwards;
 }
 .intro p {
@@ -43,8 +49,8 @@ body {
     letter-spacing: .5em;
     opacity: 0;
     animation-name: fadeIn;
-    animation-delay: 2s;
-    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-duration: 6s;
     animation-fill-mode: forwards;
 }
 
@@ -236,7 +242,7 @@ h4 {
     margin-top: 6px;
 }
 #lsccvideo, #flowersbanner {
-    height: 300px;
+    height: 350px;
 }
 .tlutext {
     text-align: left;
@@ -246,6 +252,7 @@ h4 {
 .tlutext h2 {
     width: 100%;
     margin: 0 auto;
+    display: inline-block;
 }
 .tlutext p {
     margin-right: 15px;
@@ -255,7 +262,7 @@ h4 {
     position: relative;
     display: inline-block;
     width: 40%;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-right: 15px;
     margin-bottom: 10px;
     z-index: 1;

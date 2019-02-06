@@ -5,16 +5,21 @@
     <title>kim * loves * you</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width">
+    <script>
+        $(window).load(function() {
+            $("body").removeClass("preload");
+        });
+    </script>
 </head>
     
-<body>
+<body class="preload">
     <div class="intro">
-        <video id="introvideo" muted autoplay>
-            <source src="images/intro_sm.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <iframe src="images/intro_sm.mp4?autoplay=1&loop=1" frameborder="0" width="424px" height="240px"></iframe>
         <p class="enter"><a href="photos.html"><br>enter</a></p>
     </div>
 </body>
+    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="preload.js"></script>
     
 </html>
