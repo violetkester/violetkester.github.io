@@ -234,11 +234,19 @@ h4 {
 
 /* WORKS */
 
-.tluvideo, #lsccvideo, #flowersbanner {
+#lsccvideo, #flowersbanner {
     background-color: black;
     width: 100%;
     text-align: center;
     margin-bottom: 15px;
+    margin-top: 6px;
+}
+.tluvideo {
+    height: 200px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
     margin-top: 6px;
 }
 #lsccvideo, #flowersbanner {
