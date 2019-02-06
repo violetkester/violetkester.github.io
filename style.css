@@ -23,32 +23,17 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -52%);
+}
+#introvideo {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 0;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 .intro p {
-    padding: 0;
     margin: 0;
-}
-.line1 {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-delay: 0s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-.line2 {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-.line3 {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-delay: 2s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
 }
 .intro a {
     color: blue;
@@ -58,8 +43,8 @@ body {
     letter-spacing: .5em;
     opacity: 0;
     animation-name: fadeIn;
-    animation-delay: 3s;
-    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
@@ -162,7 +147,7 @@ h4 {
     padding: 2px 0;
 }
 .statement {
-    padding: 0px 5px 5px 5px;
+    padding: 0px 5px 10px 5px;
 }
 .back a {
     color: blue;
@@ -202,7 +187,7 @@ h4 {
 }
 .imggallery, #cine {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 #natural, #ep {
     margin-top: 20px;
@@ -521,6 +506,9 @@ header h3 {
     }
     ::placeholder {
         font-size: 10px;
+    }
+    .statement {
+        padding-bottom: 20px;
     }
     .copyright {
         font-size: 11px;
