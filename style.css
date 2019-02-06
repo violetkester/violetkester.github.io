@@ -29,7 +29,7 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -52%);
+    transform: translate(-50%, -53%);
 }
 .intro iframe {
     opacity: 0;
