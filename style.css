@@ -234,7 +234,7 @@ h4 {
 
 /* WORKS */
 
-#tluvideo, #lsccvideo, #flowersbanner {
+.tluvideo, #lsccvideo, #flowersbanner {
     background-color: black;
     width: 100%;
     text-align: center;
